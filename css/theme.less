@@ -63,6 +63,16 @@ hr { }
 }
 
 // add padding around social media links
-   .social-media {
+.social-media {
        padding: @padding 0;
 }
+
+// space out social media icons and change link color
+.social-media a {
+     padding: 0 (@padding - 0.5);
+     color: @white;
+   }
+// hover link color for social media icons
+.social-media a:hover {
+     color: @grey;
+   }
