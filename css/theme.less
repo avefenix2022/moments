@@ -1,5 +1,6 @@
 @import "components/_variables";
-@import "components/_typography.less";
+@import "components/_typography";
+@import "components/_carousel";
 
 body {
      background: @primary-background;
@@ -75,4 +76,35 @@ hr { }
 // hover link color for social media icons
 .social-media a:hover {
      color: @grey;
+   }
+
+// here - allows image to go right to the edge
+   .public-banner .col-lg-12 {
+     padding-left: 0;
+     padding-right: 0;
+   }
+
+.public-banner img {
+     width: 100%;
+     height: auto;
+}
+
+// add some padding around the about headline
+   .home-about {
+     padding: (@padding * 4) 0 (@padding * 6) 0;
+   }
+
+// center all items
+   .home-food {
+     text-align: center;
+   }
+
+// add a little extra padding under images
+   .home-food img {
+     padding-bottom: @padding;
+   }
+
+// add review padding consistent with about
+   .reviews {
+     padding: (@padding * 4) 0 (@padding * 6) 0;
    }
